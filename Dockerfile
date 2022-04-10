@@ -8,4 +8,4 @@ RUN apt update && apt install -y && apt install -y wget
 RUN wget https://github.com/45Drives/autotier/releases/download/v1.2.0/autotier_1.2.0-1focal_amd64.deb
 
 # Install deb file
-RUN apt install ./autotier_1.2.0-1focal_amd64.deb && rm ./autotier_1.2.0-1focal_amd64.deb
+RUN apt install -y ./autotier_1.2.0-1focal_amd64.deb && rm ./autotier_1.2.0-1focal_amd64.deb
